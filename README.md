@@ -1,18 +1,29 @@
 
 <html> 
 <head>
-<b><i># Automacaoblogdagi<br> </b> </i>  <br> 
+<b><i># Automacaoblogdogi<br> </b> </i>  <br> 
 <i><b><u>Automação de testes</u></b></i>
 </head> <br>
 <body> 
   <br>
-<p> A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
+<p>
+**Este é um projeto de testes automatizados utilizando Java, Selenium, JUnit e Cucumber para testar a funcionalidade do um website https://blogdoagi.com.br/.
+
+Antes de executar este projeto, é necessário instalar os seguintes softwares:
+Java Development Kit (JDK) 8 ou superior
+Maven
+ChromeDriver
+Chrome
+
+
+ A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
 o Page Object, seguindo os padrões de estrutura e as boas práticas de encapsulamento e divisão das classes e organização de código,
 para uma melhor reutilização do código, foi criado os  métodos na classe BasePage o click e o select. Utilizei o site do Cucumber para criar a estrutura do projeto. O site do selenium para especificar os passos básicos e complementar com a organização .</p>
 A estrutura geral do código foi em programação orientada a objetos com o encapsulamento dos métodos para uma melhor reutilização do código, as classes (  Inscrever, Noticia e PesquisarCarreiras) representam as telas e elas herdam da classe Base Page.
 <p> O mapeamento e organização dos objetos eu utilizei as boas práticas de programação orientada a objetos, o site do cucumber para criar a estrutura do projeto, o site do selenium para esquecificar os passos básicos e complementar com a model e a page object para fazer a organização dos testes com base nas ações e elementos que estão disponíveis nas páginas que representam as telas e herdam da Basepage.</p>
 <p> A estrutura do Guerkin utilizada no script eu criei apenas um cenário de teste "CenariosBlogdaGi" e coloquei os passos de preenchimento de todas as páginas no mesmo script do BDD. Criei os hooks para abrir e fechar o chrome, declarei as variáveis para chamar as classes nos passos do BDD e no arquivo de configuração do Maven eu chamei todas as bibliotecas.</p> <br>
 </body>
+
 
 <b><i>Fontes:</b></i>
 
