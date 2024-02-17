@@ -32,8 +32,8 @@ public class Stepdefinitions {
 
     public Stepdefinitions() {
         Given("^that the user is on the application's home page$", () -> {
-            public void iEnterTheEnterVehicleData() {
-                Noticia = new Noticia(driver);
+            public void Noticia () {
+               driver.get("https://blogdoagi.com.br/");
         });
         When("^the user selects a specific news item from the Agibank menu$", () -> {
             public void iEnterTheEnterVehicleData() {
