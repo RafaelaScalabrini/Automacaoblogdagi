@@ -1,20 +1,16 @@
 
 
-Feature: Fill out the form, click on the Enter Vehicle Data tab and press next
+Feature: 3 Test Scenarios from the Agibank Blog
 
-  Scenario: Enter Vehicle Data Form
-    Given I enter the Enter vehicle data page
-    When Fill out the form, Enter Vehicle Data tab and if you select the next button
-    Then Then the system will go to the Enter Insurant Data page
-    Given I enter the Insurant Data
-    When Fill out the form, Enter Insurant Data tab and if you select the next button
-    Then Then the system will go to the Enter Insurant Data page
-    Given I enter the Enter product data
-    When Fill out the form, Enter product data tab and if you select the next button
-    Then Then the system will go to the Enter product data
-    Given I enter the Select Price Option
-    When Fill out the form, Select Price Option tab and if you select the next button
-    Then Then the system will go to the  Send Quote
-    Given I enter the Send Quote
-    When Fill out the form, Send Quote tab and if you select the next button
-    Then Then the system should display Sending e-mail success!”
+  Scenario: Select news on the Agibank website
+    Given that the user is on the application's home page
+    When the user selects a specific news item from the Agibank menu
+    Then the selected news is displayed in full screen with details
+  Scenario: Search for careers
+    Given that the user is on the home page of the Agi blog website: https://blogdoagi.com.br/
+    When the user searches for a career
+    Then a list of results related to the search is displayed
+  Scenario: Subscribe to receive the main news from the Agi Blog
+    Given that the user is on the Agi Blog home page
+    When the user enters their email address in the newsletter subscription box and clicks the "Subscribe" button
+    Then user then receives a subscription confirmation message and is added to the newsletter subscriber list
