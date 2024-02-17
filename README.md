@@ -15,25 +15,25 @@ Maven
 ChromeDriver
 Chrome
 
-#Cenários criados com o BDD:
-Cenário: Selecionar uma notícia no site
+#Cenários criados com o BDD:  <br> 
+Cenário: Selecionar uma notícia no site  <br> 
 
-Dado que o usuário está na página inicial do aplicativo 
-Quando o usuário seleciona uma notícia específica no menu do Agibank
-Então a notícia selecionada é exibida em tela cheia com detalhes
+Dado que o usuário está na página inicial do aplicativo  <br> 
+Quando o usuário seleciona uma notícia específica no menu do Agibank <br> 
+Então a notícia selecionada é exibida em tela cheia com detalhes <br> 
 
-Cenário: Pesquisar carreiras
-Dado que o usuário está na página inicial do site do blog do Agi: https://blogdoagi.com.br/
-Quando o usuário realiza uma pesquisa por uma carreira 
-Então uma lista de resultados relacionados à pesquisa é exibida
+Cenário: Pesquisar carreiras <br> 
+Dado que o usuário está na página inicial do site do blog do Agi: https://blogdoagi.com.br/ <br> 
+Quando o usuário realiza uma pesquisa por uma carreira  <br> 
+Então uma lista de resultados relacionados à pesquisa é exibida <br> 
 
 
-Cenário: Inscrever-se para receber as principais novidades do Blog do Agi
-Dado que o usuário está na página inicial do Blog do Agi
-Quando o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão "Inscrever-se"
-Então o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da newsletter
+Cenário: Inscrever-se para receber as principais novidades do Blog do Agi <br> 
+Dado que o usuário está na página inicial do Blog do Agi <br> 
+Quando o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão "Inscrever-se" <br> 
+Então o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da newsletter <br> 
 
-#Informações sobre o desenvolvimento do projeto:
+#Informações sobre o desenvolvimento do projeto: <br> 
 
  A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
 o Page Object, seguindo os padrões de estrutura e as boas práticas de encapsulamento e divisão das classes e organização de código,
