@@ -7,7 +7,7 @@
 <body> 
   <br>
 <p>
-**Este é um projeto de testes automatizados utilizando Java, Selenium, JUnit e Cucumber para testar a funcionalidade do um website https://blogdoagi.com.br/.
+**Este é um projeto de testes automatizados utilizando Java, Selenium, JUnit e Cucumber para testar a funcionalidade do  website https://blogdoagi.com.br/.
 
 Antes de executar este projeto, é necessário instalar os seguintes softwares:
 Java Development Kit (JDK) 8 ou superior
@@ -15,6 +15,25 @@ Maven
 ChromeDriver
 Chrome
 
+#Cenários criados com o BDD:
+Cenário: Selecionar uma notícia no site
+
+Dado que o usuário está na página inicial do aplicativo 
+Quando o usuário seleciona uma notícia específica no menu do Agibank
+Então a notícia selecionada é exibida em tela cheia com detalhes
+
+Cenário: Pesquisar carreiras
+Dado que o usuário está na página inicial do site do blog do Agi: https://blogdoagi.com.br/
+Quando o usuário realiza uma pesquisa por uma carreira 
+Então uma lista de resultados relacionados à pesquisa é exibida
+
+
+Cenário: Inscrever-se para receber as principais novidades do Blog do Agi
+Dado que o usuário está na página inicial do Blog do Agi
+Quando o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão "Inscrever-se"
+Então o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da newsletter
+
+#Informações sobre o desenvolvimento do projeto:
 
  A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
 o Page Object, seguindo os padrões de estrutura e as boas práticas de encapsulamento e divisão das classes e organização de código,
