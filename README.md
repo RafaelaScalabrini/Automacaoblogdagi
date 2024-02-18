@@ -16,6 +16,7 @@ ChromeDriver
 Chrome
 
 #Cenários criados com o BDD:  <br> 
+<br>
 Cenário: Selecionar uma notícia no site  <br> 
 
 Dado que o usuário está na página inicial do aplicativo  <br> 
