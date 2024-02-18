@@ -10,8 +10,8 @@ public class Noticia extends BasePage{
 
 
     //Campos (Locators = XPath)
-    protected String Agibank = "//select[@id='menu-item-3713']";
-    protected String Noticia = "//select[@id='ast-hf-mobile-menu']";
+    protected String Agibank = "//select[@id='menu-item-3713']/a";
+    protected String Noticia = "//select[@id='menu-item-3718']/a";
 
     //Metodos para executar uma ação em algum campo definido acima
     public void Noticia () {
