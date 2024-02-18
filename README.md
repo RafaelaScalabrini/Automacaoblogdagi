@@ -23,7 +23,7 @@ Dado que o usuário está na página inicial do aplicativo  <br>
 Quando o usuário seleciona uma notícia específica no menu do Agibank <br> 
 Então a notícia selecionada é exibida em tela cheia com detalhes <br> 
 
-Cenário: Pesquisar carreiras <br> 
+Cenário: Pesquisar carreiras (O sistema não está apresentando o botão de Pesquisa) <br> 
 Dado que o usuário está na página inicial do site do blog do Agi: https://blogdoagi.com.br/ <br> 
 Quando o usuário realiza uma pesquisa por uma carreira  <br> 
 Então uma lista de resultados relacionados à pesquisa é exibida <br> 
