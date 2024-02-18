@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Noticia extends BasePage{
     public Noticia(WebDriver driver) {
+
         super(driver);
     }
 
@@ -14,7 +15,7 @@ public class Noticia extends BasePage{
     protected String Noticia = "//select[@id='menu-item-3718']/a";
 
     //Metodos para executar uma ação em algum campo definido acima
-    public void Noticia () {
+    public void selectnoticia () {
 
         click(driver.findElement(By.xpath(Agibank)));
         selectOption(driver.findElement(By.xpath(Noticia)),"Noticia");

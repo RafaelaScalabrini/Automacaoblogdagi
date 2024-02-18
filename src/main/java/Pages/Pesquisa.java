@@ -8,6 +8,7 @@ public class Pesquisa extends BasePage {
     private static final String URL_PRINCIPAL = "https://blogdoagi.com.br/";
 
         public Pesquisa(WebDriver driver) {
+
             super(driver);
         }
 
