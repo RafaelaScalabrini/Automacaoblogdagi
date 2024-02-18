@@ -28,18 +28,19 @@ public class Steps {
 //Colocar os steps aqui
 public Steps() {
     @Dado("^que o usuário está na página inicial do aplicativo$", () -> {
-        private void Dado(String s, Object o) {
+        private void que_esteja_na_pagina(String url) {
+            driver.get(url);
         }
     });
 
     @Quando("^o usuário seleciona uma notícia específica no menu do Agibank$", () -> {
-        private void Quando(String s, Object o) {
+        private void SelecionarNoticia(String s, Object o) {
         }
     }
     });
 
     @Entao("^a notícia selecionada é exibida em tela cheia com detalhes$", () -> {
-        private void Então(String s, Object o) {
+        private void ResultadodaBusca(String s, Object o) {
         }
     });
 
