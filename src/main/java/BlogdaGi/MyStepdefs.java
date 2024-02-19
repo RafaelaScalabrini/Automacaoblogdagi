@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class MyStepdefs {
     protected static WebDriver driver;
     private static final String URL_BASE = "https://blogdoagi.com.br/";
-    private static final String CAMINHO_DRIVER = "src/main/resources/drivers/chromedriver.exe";
+    private static final String CAMINHO_DRIVER = "/src/main/resources/drivers/chromedriver.exe";
 
 
     Inscrever inscrever = null;
