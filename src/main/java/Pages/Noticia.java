@@ -11,14 +11,14 @@ public class Noticia extends BasePage{
 
 
     //Campos (Locators = XPath)
-    protected String Agibank = "//select[@id='menu-item-3713']/a";
-    protected String Noticia = "//select[@id='menu-item-3718']/a";
+    protected String Agibank = "//li[@id='ast-hf-mobile-menu']/li[1]/a";
+    protected String Noticia = "//li[@id='ast-hf-mobile-menu']/li[1]/ul/li[2]/a";
 
     //Metodos para executar uma ação em algum campo definido acima
     public void selectnoticia () {
 
         click(driver.findElement(By.xpath(Agibank)));
-        selectOption(driver.findElement(By.xpath(Noticia)),"Noticia");
+        click(driver.findElement(By.xpath(Noticia)));
 
     }
 
