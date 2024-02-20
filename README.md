@@ -10,10 +10,10 @@
 **Este é um projeto de testes automatizados utilizando Java, Selenium, JUnit e Cucumber para testar a funcionalidade do  website https://blogdoagi.com.br/.
 
 Antes de executar este projeto, é necessário instalar os seguintes softwares:
-Java Development Kit (JDK) 8 ou superior
-Maven
-ChromeDriver
-Chrome
+Java Development Kit (JDK) 8 ou superior<br>
+Maven<br>
+ChromeDriver<br>
+Chrome versão Versão 121.0.6167.185
 
 #Cenários criados com o BDD:  <br> 
 <br>
