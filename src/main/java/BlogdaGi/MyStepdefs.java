@@ -71,7 +71,7 @@ public class MyStepdefs {
                 pesquisa.Pesquisa();
             }
         @Então("^uma lista de resultados relacionados à pesquisa é exibida$")
-            private void uma_lista_de_resultados_relacionados_à_pesquisa_é_exibida() {
+            public void uma_lista_de_resultados_relacionados_à_pesquisa_é_exibida() {
                 pesquisa.Pesquisa();
             }
         @Dado("^que o usuário está na página inicial do Blog do Agi$")
