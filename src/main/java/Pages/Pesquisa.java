@@ -14,8 +14,8 @@ public class Pesquisa extends BasePage {
 
 
         //Campos (Locators = XPath)
-        protected String BtnLupa = "//select[@id='ast-desktop-header']/div[1]/div/div/div/div[3]/div[2]/div/div/a/span[2]/svg";
-        protected String SearchField = "//select[@id='search-field']";
+        protected String BtnLupa = "//a[@class='slide-search astra-search-icon']";
+        protected String SearchField = "[@id='search-field']";
 
         //Metodos para executar uma ação em algum campo definido acima
         public void Pesquisa () {
