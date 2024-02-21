@@ -3,6 +3,7 @@ package BlogdaGi;
 import Pages.Inscrever;
 import Pages.Noticia;
 import Pages.Pesquisa;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
@@ -44,7 +45,6 @@ public class MyStepdefs {
     @Dado("que o usuário está na página inicial do site do blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
     public void queOUsuárioEstáNaPáginaInicialDoSiteDoBlogDoAgiHttpsBlogdoagiComBr() {
 
-
         driver.get(URL_BASE);
     }
 
@@ -81,11 +81,13 @@ public class MyStepdefs {
 
     @Dado("que o usuário está na página inicial do Blog do Agi :{string}")
     public void queOUsuárioEstáNaPáginaInicialDoBlogDoAgi(String arg0) {
+        driver.get(URL_BASE);
     }
 
     @Quando("o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão {string}")
     public void oUsuárioInsereSeuEndereçoDeEMailNaCaixaDeInscriçãoDeNewsletterEClicaNoBotão(String arg0) {
         inscrever = new Inscrever(driver);
+        inscrever.fillOutTheInscrever();
     }
 
 
@@ -98,5 +100,6 @@ public class MyStepdefs {
     public void closeBrowser() {
         driver.quit();
     }
+
 
 }
