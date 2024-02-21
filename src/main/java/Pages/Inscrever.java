@@ -11,9 +11,9 @@ public class Inscrever extends BasePage{
     }
 
     //Campos (Locators = XPath)
-    protected String NameInputField = "//input[@id='post-4102']/div/div[10]/form/div[1]/input]";
-    protected String EmailInputField = "//input[@id='post-4102']/div/div[10]/form/div[2]/input]";
-    protected String SendButton = "//button[@id='post-4102']/div/div[10]/form/div[5]/button/div]";
+     protected String NameInputField = "//input[@type='text']";
+    protected String EmailInputField = "//input[@name='author']";
+    protected String SendButton = "//input[@autocomplete='email']";
 
     //Metodos para executar uma ação em algum campo definido acima
     public void  fillOutTheInscrever() {
