@@ -11,8 +11,8 @@ public class Noticia extends BasePage{
 
 
     //Campos (Locators = XPath)
-    protected String Agibank = "//li[@id='ast-hf-mobile-menu']/li[1]/a";
-    protected String Noticia = "//li[@id='ast-hf-mobile-menu']/li[1]/ul/li[2]/a";
+   protected String Agibank =  "//li[@id='menu-item-3713']";
+    protected String Noticia = "//li[@id='menu-item-3718']";
 
     //Metodos para executar uma ação em algum campo definido acima
     public void selectnoticia () {
