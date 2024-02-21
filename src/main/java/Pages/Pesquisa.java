@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class Pesquisa extends BasePage {
@@ -14,14 +15,15 @@ public class Pesquisa extends BasePage {
 
 
         //Campos (Locators = XPath)
-        protected String BtnLupa = "//a[@class='slide-search astra-search-icon']";
-        protected String SearchField = "[@id='search-field']";
+        public String btnLupa = "//a[@class='slide-search astra-search-icon']";
+        public String campobusca = "search-field";
 
         //Metodos para executar uma ação em algum campo definido acima
-        public void Pesquisa () {
+        public void Pesquisa() {
 
-            click(driver.findElement(By.xpath(BtnLupa)));
-            driver.findElement(By.xpath(SearchField)).sendKeys("Carreira");
+            click(driver.findElement(By.xpath(btnLupa)));
+            driver.findElement(By.id(campobusca)).sendKeys("carreira");
+            driver.findElement(By.id(campobusca)).sendKeys(Keys.ENTER);
+        }}
 
-        }
-}
+
