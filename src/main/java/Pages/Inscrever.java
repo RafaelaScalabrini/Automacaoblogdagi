@@ -11,14 +11,20 @@ public class Inscrever extends BasePage{
     }
 
     //Campos (Locators = XPath)
-     protected String NameInputField = "//input[@type='text']";
-    protected String EmailInputField = "//input[@name='author']";
-    protected String SendButton = "//input[@autocomplete='email']";
+
+    public String nameInputField = "//*[@id='post-4102']/div/div[10]/form/div[1]/input";
+    public String emailInputField = "//*[@id='post-4102']/div/div[10]/form/div[2]/input";
+    public String sendButton = "//*[@id='post-4102']/div/div[10]/form/div[5]/button/div";
+
+
+
 
     //Metodos para executar uma ação em algum campo definido acima
     public void  fillOutTheInscrever() {
-        driver.findElement(By.xpath(NameInputField)).sendKeys("Rafaela Oliveira");
-        driver.findElement(By.xpath(EmailInputField)).sendKeys("rafaelascalabrinioliveira@gmail.com");
-        click(driver.findElement(By.xpath(SendButton)));
+        click(driver.findElement(By.id(nameInputField)));
+        driver.findElement(By.xpath(nameInputField)).sendKeys("Rafaela Oliveira");
+        click(driver.findElement(By.id(emailInputField)));
+        driver.findElement(By.xpath(emailInputField)).sendKeys("rafaelascalabrinioliveira@gmail.com");
+        click(driver.findElement(By.id(sendButton)));
     }
 }
