@@ -44,7 +44,6 @@ public class MyStepdefs {
 
     @Dado("que o usuário está na página inicial do site do blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
     public void queOUsuárioEstáNaPáginaInicialDoSiteDoBlogDoAgiHttpsBlogdoagiComBr() {
-
         driver.get(URL_BASE);
     }
 
@@ -62,10 +61,11 @@ public class MyStepdefs {
 
     }
 
-    @Dado("que o usuário está na página inicial do site do blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
-    public void queOUsuárioEstáNaPáginaInicialDoSiteDoBlogDoAgiHttpsBlogdoagiComBr() {
-        driver.get(URL_BASE);
 
+
+    @Dado("que o usuário está na página inicial do  blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
+    public void queOUsuárioEstáNaPáginaInicialDoBlogDoAgiHttpsBlogdoagiComBr() {
+        driver.get(URL_BASE);
     }
 
     @Quando("o usuário realiza uma pesquisa por uma {string}")
@@ -79,8 +79,9 @@ public class MyStepdefs {
     public void umaListaDeResultadosRelacionadosÀPesquisa(String arg0) {
     }
 
-    @Dado("que o usuário está na página inicial do Blog do Agi :{string}")
-    public void queOUsuárioEstáNaPáginaInicialDoBlogDoAgi(String arg0) {
+
+    @Dado("que o cliente está na página inicial do site do blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
+    public void queOClienteEstáNaPáginaInicialDoSiteDoBlogDoAgiHttpsBlogdoagiComBr() {
         driver.get(URL_BASE);
     }
 
@@ -103,3 +104,5 @@ public class MyStepdefs {
 
 
 }
+
+
