@@ -1,30 +1,54 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.concurrent.TimeUnit;
 
 public class Inscrever extends BasePage{
 
     public Inscrever(WebDriver driver) {
 
         super(driver);
-    }
+        //WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        // Abre a página web
+        driver.get("https://blogdoagi.com.br/");
+
+        // Realiza o casting para JavascriptExecutor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Rola para baixo a página
+        js.executeScript("window.scrollBy(0, 1000)");
+
+        // Espera um pouco para você ver o resultado
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        }
+
 
     //Campos (Locators = XPath)
 
-    public String nameInputField = "//*[@id='post-4102']/div/div[10]/form/div[1]/input";
-    public String emailInputField = "//*[@id='post-4102']/div/div[10]/form/div[2]/input";
-    public String sendButton = "//*[@id='post-4102']/div/div[10]/form/div[5]/button/div";
+    public String nome = "//*[@class='uagb-forms-name-input uagb-forms-input']";
+    public String email = "//*[@class='uagb-forms-email-input uagb-forms-input']";
+    public String botaoenviar = "//*[@class='uagb-forms-main-submit-button wp-block-button__link']";
 
 
 
 
     //Metodos para executar uma ação em algum campo definido acima
     public void  fillOutTheInscrever() {
-        click(driver.findElement(By.id(nameInputField)));
-        driver.findElement(By.xpath(nameInputField)).sendKeys("Rafaela Oliveira");
-        click(driver.findElement(By.id(emailInputField)));
-        driver.findElement(By.xpath(emailInputField)).sendKeys("rafaelascalabrinioliveira@gmail.com");
-        click(driver.findElement(By.id(sendButton)));
+
+            driver.findElement(By.xpath(nome)).sendKeys("Rafaela");
+            driver.findElement(By.xpath(email)).sendKeys("rafaelascalabrinioliveira@gmail.com");
+            click(driver.findElement(By.xpath(botaoenviar)));
     }
 }
