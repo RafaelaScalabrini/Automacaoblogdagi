@@ -22,7 +22,7 @@ public class Inscrever extends BasePage{
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         // Rola para baixo a página
-        js.executeScript("window.scrollBy(0, 1000)");
+        js.executeScript("window.scrollBy(0, 2000)");
 
         // Espera um pouco para você ver o resultado
         try {
