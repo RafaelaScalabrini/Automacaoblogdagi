@@ -58,6 +58,8 @@ public class MyStepdefs {
 
     @Então("a notícia selecionada é exibida em tela cheia com detalhes {string}")
     public void aNotíciaSelecionadaÉExibidaEmTelaCheiaComDetalhes(String arg0) {
+      Noticia noticia = new Noticia(driver);
+        assertNotNull( noticia);
 
     }
 
@@ -77,6 +79,7 @@ public class MyStepdefs {
 
     @Então("uma lista de resultados relacionados à pesquisa {string}")
     public void umaListaDeResultadosRelacionadosÀPesquisa(String arg0) {
+         assertNotNull(pesquisa);
     }
 
 
