@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MyStepdefs {
     protected static WebDriver driver;
@@ -31,7 +33,7 @@ public class MyStepdefs {
         System.setProperty("webdriver.chrome.driver", CAMINHO_DRIVER);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(URL_BASE);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
@@ -58,7 +60,7 @@ public class MyStepdefs {
 
     @Então("a notícia selecionada é exibida em tela cheia com detalhes {string}")
     public void aNotíciaSelecionadaÉExibidaEmTelaCheiaComDetalhes(String arg0) {
-      Noticia noticia = new Noticia(driver);
+        Noticia noticia = new Noticia(driver);
         assertNotNull( noticia);
 
     }
@@ -79,13 +81,15 @@ public class MyStepdefs {
 
     @Então("uma lista de resultados relacionados à pesquisa {string}")
     public void umaListaDeResultadosRelacionadosÀPesquisa(String arg0) {
-         assertNotNull(pesquisa);
+       assertNotNull(pesquisa);
+
     }
 
 
     @Dado("que o cliente está na página inicial do site do blog do Agi: https:\\/\\/blogdoagi.com.br\\/")
     public void queOClienteEstáNaPáginaInicialDoSiteDoBlogDoAgiHttpsBlogdoagiComBr() {
         driver.get(URL_BASE);
+      //  inscrever = new Inscrever(driver);
     }
 
     @Quando("o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão {string}")
@@ -93,17 +97,24 @@ public class MyStepdefs {
         inscrever = new Inscrever(driver);
         inscrever.fillOutTheInscrever();
     }
-
-
     @Então("o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da {string}")
     public void oUsuárioRecebeUmaMensagemDeConfirmaçãoDeInscriçãoEÉAdicionadoÀListaDeAssinantesDa(String arg0) {
+
+        String textoElemento  = inscrever.fillOutTheInscrever(); // Supondo que existe um método para obter o texto do elemento de mensagem de sucesso na classe Inscrever
+
+        // Comparar o texto do elemento com o texto esperado
+        assertEquals(arg0, textoElemento);
     }
+
+
+
 
 
     @After()
     public void closeBrowser() {
         driver.quit();
     }
+
 
 
 }
