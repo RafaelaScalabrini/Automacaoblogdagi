@@ -17,5 +17,5 @@ Cenário: Pesquisar carreiras
 Cenário: Inscrever-se para receber as principais novidades do Blog do Agi
   Dado que o cliente está na página inicial do site do blog do Agi: https://blogdoagi.com.br/
   Quando o usuário insere seu endereço de e-mail na caixa de inscrição de newsletter e clica no botão "Inscrever-se"
-  Então o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da "newsletter"
+  Então o usuário recebe uma mensagem de confirmação de inscrição e é adicionado à lista de assinantes da "Obrigado! Agora você receberá todas as novidades por e-mail."
 
