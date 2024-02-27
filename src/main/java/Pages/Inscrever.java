@@ -47,8 +47,13 @@ public class Inscrever extends BasePage{
     //Metodos para executar uma ação em algum campo definido acima
     public void  fillOutTheInscrever() {
 
-            driver.findElement(By.xpath(nome)).sendKeys("Rafaela");
-            driver.findElement(By.xpath(email)).sendKeys("rafaelascalabrinioliveira@gmail.com");
-            click(driver.findElement(By.xpath(botaoenviar)));
+         driver.findElement(By.xpath(nome)).sendKeys("Rafaela");
+        driver.findElement(By.xpath(email)).sendKeys("rafaelascalabrinioliveira@gmail.com");
+        click(driver.findElement(By.xpath(botaoenviar)));
+        String texto = driver.findElement(By.xpath(textoElemento)).getText();
+        System.out.println(texto);
+
+
+        return texto;
     }
 }
